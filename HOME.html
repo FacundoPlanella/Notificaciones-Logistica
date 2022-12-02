@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js.js"></script>
+    <title>Notificaciones</title>
+</head>
+<body>
+    <div class="container px-1 px-md-4 py-5 mx-auto">
+    <div class="card">
+        <div class="row d-flex justify-content-between px-3 top">
+        <!--traking id-->
+            <div class="d-flex">
+                <h5>Pedido <span class="text-primary font-weight-bold" id="SRpantalla">#</span></h5>
+            </div>
+        <!--Fecha planificada-->
+            <div class="d-flex flex-column text-sm-right">
+                <p class="mb-0" id="Planificado">Fecha planificada <span> 01/12/19</span></p>
+            </div>
+        </div>
+        <!-- Barra de procesos estados = step0 | active step0 -->
+        <div class="row d-flex justify-content-center">
+            <div class="col-12">
+            <ul id="progressbar" class="text-center">
+                <li class="step0" id="Barra1"></li>
+                <li class="step0" id="Barra2"></li>
+                <li class="step0" id="Barra3"></li>
+                <li class="step0" id="Barra4"></li>
+            </ul>
+            </div>
+        </div>
+        <!-- *! Notificaciones -->
+        <!--Modificar opacity en icon y en icon-content-->
+        <div class="row justify-content-between top">
+            <div class="row d-flex icon-content" id="Not1">
+                <img class="icon" src="./img/nota.png">
+                <div class="d-flex flex-column">
+                    <p class="font-weight-bold">Pedido<br>planificado</p>
+                </div>
+            </div>
+            <div class="row d-flex icon-content" id="Not2">
+                <img class="icon" src="./img/mail.png">
+                <div class="d-flex flex-column">
+                    <p class="font-weight-bold">Su pedido <br>esta en Camino</p>
+                </div>
+            </div>
+            <div class="row d-flex icon-content" id="Not3"> 
+                <img class="icon" src="./img/camioneta.png">
+                <div class="d-flex flex-column">
+                    <p class="font-weight-bold">Pedido<br>en Ruta</p>
+                </div>
+            </div>
+            <div class="row d-flex icon-content" id="Not4">
+                <img class="icon" src="./img/casa.png">
+                <div class="d-flex flex-column">
+                    <p class="font-weight-bold">Entrega<br>Exitosa</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
